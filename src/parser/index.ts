@@ -1,5 +1,6 @@
 import {Course, CourseType} from '../entity/Course';
 import cheerio from 'cheerio';
+import {parse} from 'date-fns';
 import {Module} from '../entity/Module';
 import {Cluster} from '../entity/Cluster';
 import {CourseOffering, Semester} from '../entity/CourseOffering';
@@ -29,6 +30,13 @@ function getYearSemester(rawYearSemester: string) {
     return null;
 }
 
+function extractLastModified(html: string) {
+    const $ = cheerio.load(html);
+    let dateString = $('.time').text();
+    dateString = dateString.slice(3);
+    let dateFormat = 'dd.MM.yyyy HH:mm';
+    return parse(dateString, dateFormat, new Date());
+}
 
 async function extractOfferedCourses(html: string) {
     const $ = cheerio.load(html);
@@ -68,5 +76,6 @@ async function extractOfferedCourses(html: string) {
 }
 
 export {
-    extractOfferedCourses
+    extractOfferedCourses,
+    extractLastModified
 }

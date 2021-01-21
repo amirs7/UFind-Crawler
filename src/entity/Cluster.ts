@@ -1,4 +1,4 @@
-import {Column, Entity, JoinTable, ManyToMany, PrimaryColumn} from 'typeorm';
+import {Column, Entity, JoinTable, ManyToMany, PrimaryColumn, UpdateDateColumn} from 'typeorm';
 import {Module} from './Module';
 
 @Entity()
@@ -12,6 +12,9 @@ export class Cluster {
     @JoinTable()
     @ManyToMany(() => Module, module => module.clusters, {cascade: true})
     modules: Module[];
+
+    @UpdateDateColumn()
+    updatedAt: Date;
 
     constructor(name: string, ects: number) {
         this.name = name;
