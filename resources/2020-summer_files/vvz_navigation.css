@@ -1,0 +1,130 @@
+.utilities {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+.utilities .link::before {
+  display: inline-block;
+  font-family: "usse-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: initial;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  content: "\f125";
+
+  background-color: #99c93e; 
+  box-sizing: border-box;
+  border-radius: 50%;
+  padding: 0.4em;
+
+  text-decoration: none !important;
+}
+.utilities .link.on::before {
+  background-color: #e8e8e8; 
+}
+
+.utilities a.link.off {
+  color: #fff;
+}
+.utilities a.link.off:hover {
+  color: #00355A;
+}
+
+.page-preferences {
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.semester-navigation {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+.semester-navigation .previous, 
+.semester-navigation .next, 
+.semester-navigation .current 
+{
+  display: inline-block;
+  background-color: #e8e8e8; 
+  padding: 0.2em 0.5em;
+  line-height: 1.5em;
+}
+
+.semester-navigation .previous {
+  margin-right: 1ex;
+}
+.semester-navigation .previous abbr {
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+.semester-navigation .previous abbr::before {
+  display: inline-block;
+  font-family: "usse-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: initial;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  content: "\f127";
+}
+
+.semester-navigation .next {
+  margin-left: 1ex;
+}
+.semester-navigation .next abbr {
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+.semester-navigation .next abbr::before {
+  display: inline-block;
+  font-family: "usse-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: initial;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  content: "\f126";
+}
+
+/* .semester-navigation:not(.first)::before {
+  content: '';
+  display: inline-block;
+  overflow: hidden;
+  width: 0; 
+  height: 0; 
+  border-top: 0.95em solid transparent;
+  border-bottom: 0.95em solid transparent;
+  border-right: 0.95em solid #e8e8e8;
+}
+
+.semester-navigation:not(.current):not(.last)::after {
+  content: '';
+  display: inline-block;
+  overflow: hidden;
+  width: 0; 
+  height: 0; 
+  border-top: 0.95em solid transparent;
+  border-bottom: 0.95em solid transparent;
+  border-left: 0.95em solid #e8e8e8;
+} */

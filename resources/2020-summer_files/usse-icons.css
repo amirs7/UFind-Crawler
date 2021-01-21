@@ -1,0 +1,125 @@
+/*
+  Icon Font: usse-icons
+*/
+
+@font-face {
+  font-family: "usse-icons";
+  src: url("./usse-icons_ceb56256896c861786894f04c31bef28.eot");
+  src: url("./usse-icons_ceb56256896c861786894f04c31bef28.eot?#iefix") format("embedded-opentype"),
+       url("./usse-icons_ceb56256896c861786894f04c31bef28.woff") format("woff"),
+       url("./usse-icons_ceb56256896c861786894f04c31bef28.ttf") format("truetype"),
+       url("./usse-icons_ceb56256896c861786894f04c31bef28.svg#usse-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "usse-icons";
+    src: url("./usse-icons_ceb56256896c861786894f04c31bef28.svg#usse-icons") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icon-usse-bookmark-outer-symbolic:before,
+.icon-usse-bookmark-symbolic:before,
+.icon-usse-check-symbolic:before,
+.icon-usse-comment-symbolic:before,
+.icon-usse-course-symbolic:before,
+.icon-usse-details-symbolic:before,
+.icon-usse-dislike-symbolic:before,
+.icon-usse-edit-symbolic:before,
+.icon-usse-exam-symbolic:before,
+.icon-usse-expand-symbolic:before,
+.icon-usse-facebook-symbolic:before,
+.icon-usse-filter-symbolic:before,
+.icon-usse-flickr-symbolic:before,
+.icon-usse-forward-symbolic:before,
+.icon-usse-homepage-symbolic:before,
+.icon-usse-info-symbolic:before,
+.icon-usse-instagram-symbolic:before,
+.icon-usse-language-symbolic:before,
+.icon-usse-like-symbolic:before,
+.icon-usse-link-symbolic:before,
+.icon-usse-login-symbolic:before,
+.icon-usse-logout-symbolic:before,
+.icon-usse-menu-symbolic:before,
+.icon-usse-mobile-symbolic:before,
+.icon-usse-module-symbolic:before,
+.icon-usse-more-symbolic:before,
+.icon-usse-neutral-symbolic:before,
+.icon-usse-phone-symbolic:before,
+.icon-usse-pvz-symbolic:before,
+.icon-usse-quicklinks-symbolic:before,
+.icon-usse-reduce-symbolic:before,
+.icon-usse-register-symbolic:before,
+.icon-usse-rewind-symbolic:before,
+.icon-usse-search-symbolic:before,
+.icon-usse-slink-symbolic:before,
+.icon-usse-structure-symbolic:before,
+.icon-usse-target-symbolic:before,
+.icon-usse-twitter-symbolic:before,
+.icon-usse-u-symbolic:before,
+.icon-usse-units-symbolic:before,
+.icon-usse-user-symbolic:before,
+.icon-usse-youtube-symbolic:before,
+.icon-usse-zid-symbolic:before {
+  display: inline-block;
+  font-family: "usse-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icon-usse-bookmark-outer-symbolic:before { content: "\f131"; }
+.icon-usse-bookmark-symbolic:before { content: "\f100"; }
+.icon-usse-check-symbolic:before { content: "\f12a"; }
+.icon-usse-comment-symbolic:before { content: "\f114"; }
+.icon-usse-course-symbolic:before { content: "\f101"; }
+.icon-usse-details-symbolic:before { content: "\f125"; }
+.icon-usse-dislike-symbolic:before { content: "\f112"; }
+.icon-usse-edit-symbolic:before { content: "\f132"; }
+.icon-usse-exam-symbolic:before { content: "\f108"; }
+.icon-usse-expand-symbolic:before { content: "\f12c"; }
+.icon-usse-facebook-symbolic:before { content: "\f119"; }
+.icon-usse-filter-symbolic:before { content: "\f129"; }
+.icon-usse-flickr-symbolic:before { content: "\f11a"; }
+.icon-usse-forward-symbolic:before { content: "\f126"; }
+.icon-usse-homepage-symbolic:before { content: "\f121"; }
+.icon-usse-info-symbolic:before { content: "\f116"; }
+.icon-usse-instagram-symbolic:before { content: "\f11b"; }
+.icon-usse-language-symbolic:before { content: "\f10b"; }
+.icon-usse-like-symbolic:before { content: "\f111"; }
+.icon-usse-link-symbolic:before { content: "\f10d"; }
+.icon-usse-login-symbolic:before { content: "\f10c"; }
+.icon-usse-logout-symbolic:before { content: "\f12f"; }
+.icon-usse-menu-symbolic:before { content: "\f109"; }
+.icon-usse-mobile-symbolic:before { content: "\f117"; }
+.icon-usse-module-symbolic:before { content: "\f110"; }
+.icon-usse-more-symbolic:before { content: "\f12e"; }
+.icon-usse-neutral-symbolic:before { content: "\f113"; }
+.icon-usse-phone-symbolic:before { content: "\f118"; }
+.icon-usse-pvz-symbolic:before { content: "\f123"; }
+.icon-usse-quicklinks-symbolic:before { content: "\f10a"; }
+.icon-usse-reduce-symbolic:before { content: "\f12d"; }
+.icon-usse-register-symbolic:before { content: "\f122"; }
+.icon-usse-rewind-symbolic:before { content: "\f127"; }
+.icon-usse-search-symbolic:before { content: "\f115"; }
+.icon-usse-slink-symbolic:before { content: "\f10f"; }
+.icon-usse-structure-symbolic:before { content: "\f11f"; }
+.icon-usse-target-symbolic:before { content: "\f10e"; }
+.icon-usse-twitter-symbolic:before { content: "\f11c"; }
+.icon-usse-u-symbolic:before { content: "\f11e"; }
+.icon-usse-units-symbolic:before { content: "\f106"; }
+.icon-usse-user-symbolic:before { content: "\f107"; }
+.icon-usse-youtube-symbolic:before { content: "\f11d"; }
+.icon-usse-zid-symbolic:before { content: "\f120"; }

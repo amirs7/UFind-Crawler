@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'uni-icons';
+  src:url('/icons/uni-icons/icomoon.eot');
+  src:url('/icons/uni-icons/icomoon.eot') format('embedded-opentype'),
+      url('/icons/uni-icons/icomoon.ttf') format('truetype'),
+      url('/icons/uni-icons/icomoon.wof') format('woff'),
+      url('/icons/uni-icons/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "uni-icons";
+    src: url('/icons/uni-icons/icomoon.svg') format("svg");
+  }
+}
+
+.icon-uni-studienpoint:before,
+.icon-uni-univis:before,
+.icon-uni-biblio:before,
+.icon-uni-lesung:before,
+.icon-uni-fakultaeten:before,
+.icon-uni-webmail:before,
+.icon-uni-intranet:before,
+.icon-uni-kontakt:before {
+  display: inline-block;
+  font-family: "uni-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-align: center;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  width: 1.7em;
+}
+
+.icon-uni-studienpoint:before { content: "\e60b\00a0"; }
+.icon-uni-univis:before       { content: "\e60a\00a0"; }
+.icon-uni-biblio:before       { content: "\e612\00a0"; }
+.icon-uni-lesung:before       { content: "\e60e\00a0"; }
+.icon-uni-fakultaeten:before  { content: "\e611\00a0"; }
+.icon-uni-webmail:before      { content: "\e609\00a0"; }
+.icon-uni-intranet:before     { content: "\e610\00a0"; }
+.icon-uni-kontakt:before      { content: "\e60f\00a0"; }

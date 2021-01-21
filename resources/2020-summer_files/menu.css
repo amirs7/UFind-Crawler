@@ -1,0 +1,253 @@
+@media print {
+  header.ufind-menu { display: none; }
+  header.ufind-top { display: none; }
+  header.ufind-main { display: none; }
+}
+
+@media screen {
+
+  /* --------------------------------- */
+  header.ufind-menu {
+    z-index: 9000;
+    border-top: 0 solid #1A74B0;
+    color: #1A74B0;
+    background-color: white;
+    transition: border-top 0.2s;
+    box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.175);
+  }
+
+
+  header.ufind-menu nav {
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: block;
+    font-weight: 500;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding-left: 1ex;
+    padding-right: 1ex;
+  }
+
+  header.ufind-menu nav > ul > li.show > :not(:first-child) ul {
+    text-transform: none;
+    list-style: outside none none;
+    padding: 0;
+    margin: 1ex;
+    display: inline-block;
+    text-align: left;
+  }
+
+  header.ufind-menu nav > ul > li.show > :not(:first-child) ul li {
+    font-size: 1em;
+    font-weight: 500;
+  }
+
+  header.ufind-menu nav > ul > li.show > :not(:first-child) a {
+    display: inline-block;
+    padding: 0.2em 0.4em;
+    color: white;
+    text-decoration: none;
+  }
+  header.ufind-menu nav > ul > li.show > :not(:first-child) a::after {
+    display: inline-block;
+    font-family: "usse-icons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: initial;
+    text-decoration: inherit;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    content: "\f10d";
+  }
+  header.ufind-menu nav > ul > li.show > :not(:first-child) a:hover {
+    color: #7B7B7B;
+    background-color: white;
+    text-shadow: none;
+  }
+
+  /* --------------------------------- */
+
+  .ufind-menu-top > ul, .ufind-menu-main > ul {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    list-style: outside none none;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+  }
+
+  /* --------------------------------- */
+
+  .ufind-menu-top {
+    height: 4em;
+
+    transition: height 0.5s;
+    padding-top: 1ex;
+  }
+  body.small .ufind-menu-top {
+    height: 2em;
+    transition: height 0.5s;
+  }
+
+  .ufind-menu-top > ul  {
+    margin-top: -1ex;
+  }
+  .ufind-menu-top > ul > li {
+    margin: 0;
+    color: #7B7B7B;
+    display: block;
+    padding: 0.3em 0.6em;
+    padding-top: 0.3em;
+    margin-left: 0.1em;
+    cursor: pointer;
+    font-weight: 500;
+
+    transition-property: background-color, color, text-shadow;
+    transition-duration: 0.5s;
+  }
+
+  .ufind-menu-top > ul > li.no-padding {
+    padding: 0;
+  }
+  .ufind-menu-top > ul > li > a {
+    color: #7B7B7B;
+  }
+  .ufind-menu-top > ul > li:hover {
+    background-color: #1A74B0;
+    color: white;
+    text-shadow: 0 -0.05em 0 rgba(0,0,0,0.5);
+    transition-property: background-color, color, text-shadow;
+    transition-duration: 0.1s;
+  }
+
+  .ufind-menu-top > ul > li:hover a { color: white; text-decoration: none; }
+  .ufind-menu-top > ul > li > *:not(:first-child) {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    color: white;
+    position: fixed;
+    z-index: 8999;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .ufind-menu-top > ul > li.show {
+    background-color: #1A74B0;
+    color: white;
+    font-weight: 500;
+  }
+
+  .ufind-menu-top > ul > li.show > :not(:first-child) {
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.2s;
+  }
+
+  .ufind-menu-top > ul > li.show > :not(:first-child) > * {
+    margin: 0;
+    padding: 0;
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: right;
+  }
+
+  /* --------------------------------- */
+
+  .ufind-menu-main {
+    margin-top: 0.3em;
+    padding-bottom: 0.5em;
+    min-height: 1.8em;
+  }
+
+  .ufind-menu-main > ul > li {
+    display: block;
+    color: white;
+    background-color: #9F9F9F;
+    margin-left: 0.1em;
+    padding: 0.3em 0.6em;
+    cursor: pointer;
+    font-weight: 500;
+
+    transition-property: background-color, color, text-shadow;
+    transition-duration: 0.4s;
+  }
+
+  .ufind-menu-main > ul > li:hover {
+    background-color: #1A74B0;
+    text-shadow: 0 -0.05em 0 rgba(0,0,0,0.5);
+    transition-property: background-color, color, text-shadow;
+    transition-duration: 0.4s;
+  }
+
+  .ufind-menu-main > ul > li > span, .ufind-menu-main > ul > li > a {
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+  .ufind-menu-main > ul > li > a { color: white; }
+  .ufind-menu-main > ul > li:hover a { color:white; text-decoration: none; }
+  .ufind-menu-main > ul > li > *:not(:first-child) {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    color: white;
+    position: absolute;
+
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .ufind-menu-main > ul > li.show {
+    background-color: #1A74B0;
+    color: white;
+    font-weight: 500;
+  }
+
+  .ufind-menu-main > ul > li.show > :not(:first-child) {
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.2s;
+  }
+
+  .ufind-menu-main > ul > li.show > :not(:first-child) > * {
+    margin: 0;
+    padding: 0;
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: right;
+
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+    background-color: #1A74B0;
+    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.5);
+  }
+
+}

@@ -1,0 +1,150 @@
+@media print {
+  header.ufind-title { display: none; }
+}
+
+@media screen {
+  header.ufind-title {
+    position: fixed;
+    z-index: 9050;
+    pointer-events: none;
+    height: 4em;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #1A74B0;
+    padding-top: 1ex;
+    transition: height 0.5s, margin-top 0.2s;
+  }
+
+  body.small header.ufind-title {
+    height: 2em;
+    transition: height 0.5s;
+  }
+
+  header.ufind-title a {
+    color: #7a7a7a;
+  }
+  header.ufind-title a:hover {
+    color: #99c93e;
+    text-decoration: none;
+  }
+  header.ufind-title a:active {
+    color: #99c93e;
+    outline: none !important;
+    text-decoration: none;
+  }
+  header.ufind-title a:focus {
+    color: #99c93e;
+    outline: none !important;
+    text-decoration: none;
+  }
+
+  header.ufind-title .titleblock {
+    color: #7a7a7a;
+    padding: 0;
+    margin: 0;
+    height: 4em;
+    font-size: 1em;
+    font-weight: 500;
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+    transition: height 0.5s;
+    padding-left: 1ex;
+    padding-right: 1ex;
+  }
+  body.small header.ufind-title .titleblock {
+    height: 2em;
+    transition: height 0.5s;
+  }
+
+  header.ufind-title .uni {
+    pointer-events: auto;
+    display: inline-block;
+    height: 4em;
+
+    background-size: auto 4em;
+    background-repeat: no-repeat;
+    background-image:url(/logos/logo.svg);
+
+    vertical-align: top;
+    transition: height 0.5s, background-size 0.5s;
+  }
+  body.small header.ufind-title .uni {
+    height: 2em;
+    background-size: auto 2em;
+    transition: height 0.5s, background-size 0.5s;
+  }
+
+
+  header.ufind-title .uni a {
+    display: inline-block;
+    opacity: 0;
+    height: 4em;
+    width: 14.5em;
+  }
+  body.small header.ufind-title .uni a {
+    height: 2em;
+  }
+
+  header.ufind-title .title {
+    position: relative;
+    display: inline-block;
+    pointer-events: auto;
+    top: 0.4em;
+    transition: opacity 0.5s, top 0.5s;
+  }
+  body.small header.ufind-title .title {
+    opacity: 0;
+    top: -2em;
+    transition: opacity 0.5s, top 0.5s;
+  }
+
+  header.ufind-title .title:before {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 1ex;
+    margin-right: 1ex;
+    height: 4em;
+    border-left: 0.1em solid #7a7a7a;
+    content: '';
+    vertical-align: top;
+  }
+
+  header.ufind-title .title .link:before {
+    display: inline-block;
+    color: #99c93e;
+    font-family: "usse-icons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: initial;
+    text-indent: 0;
+    text-decoration: inherit;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-size: 2.5em;
+    content: '\f11e';
+    margin-top: 0.30ex;
+  }
+  header.ufind-title .title .find {
+    font-size: 2.8em;
+    text-overflow: ellipsis;
+    text-transform: lowercase;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 0.20em;
+    letter-spacing: -0.015em;
+  }
+
+  /* ------------------------------ */
+
+  @media (max-width: 40em) {
+    header.ufind-title {
+      display: none;
+    }
+  }
+}

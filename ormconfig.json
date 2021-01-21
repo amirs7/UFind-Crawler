@@ -1,0 +1,22 @@
+{
+  "type": "mysql",
+  "database": "poster",
+  "synchronize": true,
+  "logging": false,
+  "username": "root",
+  "password": "45875154",
+  "entities": [
+    "src/entity/**/*.ts"
+  ],
+  "migrations": [
+    "src/migration/**/*.ts"
+  ],
+  "subscribers": [
+    "src/subscriber/**/*.ts"
+  ],
+  "cli": {
+    "entitiesDir": "src/entity",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
+  }
+}

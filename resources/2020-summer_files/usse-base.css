@@ -1,0 +1,47 @@
+@media screen {
+
+  body {
+    margin-top: 0;
+    margin-bottom: 9em;
+  }
+
+  body.hidden, .ufind .hidden { display: none; }
+
+  .loading {
+    display: block;
+    padding-top: 1em;
+    width: 2em;
+    padding-bottom: 1em;
+  }
+
+  .ufind .hidden { 
+    display: none; 
+  }
+
+  main.ufind {
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 8.3em solid white;
+    /* stupid stupid chrome has to be prevented from automatic font scaling. die. */
+    max-height: 1000000px; 
+  }
+  main.ufind.grayfirst {
+    border-top: 0 none;
+  }
+  main.ufind.grayfirst {
+    border-top: 0 none;
+  }
+  main.ufind.grayfirst > *:not(.hidden):first-child {
+    border-top: 7.3em solid #f8f8f8;
+  }
+  main.ufind.plain {
+    border-top: 0 none;
+  }
+
+  .ufind input:focus, .ufind textarea:focus, .ufind button:focus {
+    outline: none !important;
+    /* border-color: #1A74B0 !important; */
+  }
+
+}

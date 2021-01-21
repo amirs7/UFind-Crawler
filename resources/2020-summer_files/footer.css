@@ -1,0 +1,95 @@
+@media print {
+  .ufind-footer {
+    display: none;
+  }
+}
+
+@media screen {
+  .ufind-footer {
+    position: absolute;
+    height: 8em;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #9f9f9f;
+    font-weight: 300;
+    padding-top: 0.4em;
+  }
+
+  .ufind-footer address {
+    font-style: normal;
+  }
+
+  .ufind-footer .top {
+    background-color: #f8f8f8;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    margin-bottom: 0.4em;
+  }
+
+  .ufind-footer .bottom, .ufind-footer .socialmediamadness {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .ufind-footer .bottom > *:first-child, .ufind-footer .socialmediamadness > *:first-child {
+    -webkit-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+
+  .ufind-footer .bottom {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .ufind-footer .socialmediamadness > *:first-child {
+    color: rgba(0,0,0,0);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image:url(/logos/logo.svg);
+  }
+
+  .ufind-footer .socialmediamadness > *:not(:first-child) {
+    transition-property: background-color, color;
+    transition-duration: 0.4s;
+    width: 1.6em;
+    min-width: 1.6em;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 2em;
+    color: #9F9F9F;
+    margin-left: 0.3em;
+  }
+  .ufind-footer .socialmediamadness > *:not(:first-child)::before {
+    transition-property: background-color, color;
+    transition-duration: 0.4s;
+    background-color: #f1f1f1;
+    visibility: visible;
+    padding: 0.3em;
+  }
+
+  .ufind-footer .socialmediamadness > *:not(:first-child):hover {
+    color: #ffffff;
+    transition-property: color;
+    transition-duration: 0.4s;
+    text-decoration: none;
+  }
+
+  .ufind-footer .socialmediamadness > *:not(:first-child):hover::before {
+    background-color: #1a74b0;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+  }
+
+  .ufind-footer .bottom, .ufind-footer .socialmediamadness {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 60em;
+    padding-left: 1ex;
+    padding-right: 1ex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

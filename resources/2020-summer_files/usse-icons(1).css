@@ -1,0 +1,195 @@
+/*
+  Icon Font: usse-icons
+*/
+
+
+
+
+
+.icon-usse-bookmark-outer::after,
+.icon-usse-bookmark::after,
+.icon-usse-check::after,
+.icon-usse-comment::after,
+.icon-usse-course::after,
+.icon-usse-details::after,
+.icon-usse-dislike::after,
+.icon-usse-edit::after,
+.icon-usse-exam::after,
+.icon-usse-expand::after,
+.icon-usse-facebook::after,
+.icon-usse-filter::after,
+.icon-usse-flickr::after,
+.icon-usse-forward::after,
+.icon-usse-homepage::after,
+.icon-usse-info::after,
+.icon-usse-instagram::after,
+.icon-usse-language::after,
+.icon-usse-like::after,
+.icon-usse-link::after,
+.icon-usse-login::after,
+.icon-usse-logout::after,
+.icon-usse-menu::after,
+.icon-usse-mobile::after,
+.icon-usse-module::after,
+.icon-usse-more::after,
+.icon-usse-neutral::after,
+.icon-usse-phone::after,
+.icon-usse-pvz::after,
+.icon-usse-quicklinks::after,
+.icon-usse-reduce::after,
+.icon-usse-register::after,
+.icon-usse-rewind::after,
+.icon-usse-search::after,
+.icon-usse-slink::after,
+.icon-usse-structure::after,
+.icon-usse-target::after,
+.icon-usse-twitter::after,
+.icon-usse-u::after,
+.icon-usse-units::after,
+.icon-usse-user::after,
+.icon-usse-youtube::after,
+.icon-usse-zid::after,
+.nicon-usse-bookmark-outer::after,
+.nicon-usse-bookmark::after,
+.nicon-usse-check::after,
+.nicon-usse-comment::after,
+.nicon-usse-course::after,
+.nicon-usse-details::after,
+.nicon-usse-dislike::after,
+.nicon-usse-exam::after,
+.nicon-usse-expand::after,
+.nicon-usse-facebook::after,
+.nicon-usse-filter::after,
+.nicon-usse-flickr::after,
+.nicon-usse-forward::after,
+.nicon-usse-homepage::after,
+.nicon-usse-info::after,
+.nicon-usse-instagram::after,
+.nicon-usse-language::after,
+.nicon-usse-like::after,
+.nicon-usse-link::after,
+.nicon-usse-login::after,
+.nicon-usse-logout::after,
+.nicon-usse-menu::after,
+.nicon-usse-mobile::after,
+.nicon-usse-module::after,
+.nicon-usse-more::after,
+.nicon-usse-neutral::after,
+.nicon-usse-phone::after,
+.nicon-usse-pvz::after,
+.nicon-usse-quicklinks::after,
+.nicon-usse-reduce::after,
+.nicon-usse-register::after,
+.nicon-usse-rewind::after,
+.nicon-usse-search::after,
+.nicon-usse-slink::after,
+.nicon-usse-structure::after,
+.nicon-usse-target::after,
+.nicon-usse-twitter::after,
+.nicon-usse-u::after,
+.nicon-usse-units::after,
+.nicon-usse-user::after,
+.nicon-usse-youtube::after,
+.nicon-usse-zid::after {
+  display: inline-block;
+  font-family: "usse-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: initial;
+  text-indent: 0;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icon-usse-bookmark-outer::after { content: "\00a0\f131" !important; }
+.icon-usse-bookmark::after       { content: "\00a0\f100" !important; }
+.icon-usse-check::after          { content: "\00a0\f12a" !important; }
+.icon-usse-comment::after        { content: "\00a0\f114" !important; }
+.icon-usse-course::after         { content: "\00a0\f101" !important; }
+.icon-usse-details::after        { content: "\00a0\f125" !important; }
+.icon-usse-dislike::after        { content: "\00a0\f112" !important; }
+.icon-usse-edit::after           { content: "\00a0\f132" !important; }
+.icon-usse-exam::after           { content: "\00a0\f108" !important; }
+.icon-usse-expand::after         { content: "\00a0\f12c" !important; }
+.icon-usse-facebook::after       { content: "\00a0\f119" !important; }
+.icon-usse-filter::after         { content: "\00a0\f129" !important; }
+.icon-usse-flickr::after         { content: "\00a0\f11a" !important; }
+.icon-usse-forward::after        { content: "\00a0\f126" !important; }
+.icon-usse-homepage::after       { content: "\00a0\f121" !important; }
+.icon-usse-info::after           { content: "\00a0\f116" !important; }
+.icon-usse-instagram::after      { content: "\00a0\f11b" !important; }
+.icon-usse-language::after       { content: "\00a0\f10b" !important; }
+.icon-usse-like::after           { content: "\00a0\f111" !important; }
+.icon-usse-link::after           { content: "\00a0\f10d" !important; }
+.icon-usse-login::after          { content: "\00a0\f10c" !important; }
+.icon-usse-logout::after         { content: "\00a0\f12f" !important; }
+.icon-usse-menu::after           { content: "\00a0\f109" !important; }
+.icon-usse-mobile::after         { content: "\00a0\f117" !important; }
+.icon-usse-module::after         { content: "\00a0\f110" !important; }
+.icon-usse-more::after           { content: "\00a0\f12e" !important; }
+.icon-usse-neutral::after        { content: "\00a0\f113" !important; }
+.icon-usse-phone::after          { content: "\00a0\f118" !important; }
+.icon-usse-pvz::after            { content: "\00a0\f123" !important; }
+.icon-usse-quicklinks::after     { content: "\00a0\f10a" !important; }
+.icon-usse-reduce::after         { content: "\00a0\f12d" !important; }
+.icon-usse-register::after       { content: "\00a0\f122" !important; }
+.icon-usse-rewind::after         { content: "\00a0\f127" !important; }
+.icon-usse-search::after         { content: "\00a0\f115" !important; }
+.icon-usse-slink::after          { content: "\00a0\f10f" !important; }
+.icon-usse-structure::after      { content: "\00a0\f11f" !important; }
+.icon-usse-target::after         { content: "\00a0\f10e" !important; }
+.icon-usse-twitter::after        { content: "\00a0\f11c" !important; }
+.icon-usse-u::after              { content: "\00a0\f11e" !important; }
+.icon-usse-units::after          { content: "\00a0\f106" !important; }
+.icon-usse-user::after           { content: "\00a0\f107" !important; }
+.icon-usse-youtube::after        { content: "\00a0\f11d" !important; }
+.icon-usse-zid::after            { content: "\00a0\f120" !important; }
+
+.nicon-usse-bookmark-outer::after { content: "\f131" !important; }
+.nicon-usse-bookmark::after       { content: "\f100" !important; }
+.nicon-usse-check::after          { content: "\f12a" !important; }
+.nicon-usse-comment::after        { content: "\f114" !important; }
+.nicon-usse-course::after         { content: "\f101" !important; }
+.nicon-usse-details::after        { content: "\f125" !important; }
+.nicon-usse-dislike::after        { content: "\f112" !important; }
+.nicon-usse-exam::after           { content: "\f108" !important; }
+.nicon-usse-expand::after         { content: "\f12c" !important; }
+.nicon-usse-edit::after           { content: "\00a0" !important; }
+.nicon-usse-facebook::after       { content: "\f119" !important; }
+.nicon-usse-filter::after         { content: "\f129" !important; }
+.nicon-usse-flickr::after         { content: "\f11a" !important; }
+.nicon-usse-forward::after        { content: "\f126" !important; }
+.nicon-usse-homepage::after       { content: "\f121" !important; }
+.nicon-usse-info::after           { content: "\f116" !important; }
+.nicon-usse-instagram::after      { content: "\f11b" !important; }
+.nicon-usse-language::after       { content: "\f10b" !important; }
+.nicon-usse-like::after           { content: "\f111" !important; }
+.nicon-usse-link::after           { content: "\f10d" !important; }
+.nicon-usse-login::after          { content: "\f10c" !important; }
+.nicon-usse-logout::after         { content: "\f12f" !important; }
+.nicon-usse-menu::after           { content: "\f109" !important; }
+.nicon-usse-mobile::after         { content: "\f117" !important; }
+.nicon-usse-module::after         { content: "\f110" !important; }
+.nicon-usse-more::after           { content: "\f12e" !important; }
+.nicon-usse-neutral::after        { content: "\f113" !important; }
+.nicon-usse-phone::after          { content: "\f118" !important; }
+.nicon-usse-pvz::after            { content: "\f123" !important; }
+.nicon-usse-quicklinks::after     { content: "\f10a" !important; }
+.nicon-usse-reduce::after         { content: "\f12d" !important; }
+.nicon-usse-register::after       { content: "\f122" !important; }
+.nicon-usse-rewind::after         { content: "\f127" !important; }
+.nicon-usse-search::after         { content: "\f115" !important; }
+.nicon-usse-slink::after          { content: "\f10f" !important; }
+.nicon-usse-structure::after      { content: "\f11f" !important; }
+.nicon-usse-target::after         { content: "\f10e" !important; }
+.nicon-usse-twitter::after        { content: "\f11c" !important; }
+.nicon-usse-u::after              { content: "\f11e" !important; }
+.nicon-usse-units::after          { content: "\f106" !important; }
+.nicon-usse-user::after           { content: "\f107" !important; }
+.nicon-usse-youtube::after        { content: "\f11d" !important; }
+.nicon-usse-zid::after            { content: "\f120" !important; }

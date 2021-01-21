@@ -1,0 +1,87 @@
+.ufind-label { 
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  position: relative;
+  vertical-align: top;
+  margin-top: 0.2em;
+  cursor: help;
+} 
+.ufind-label .content:hover::after { 
+  text-indent: 0;
+  content: ' - ' attr(title);
+}
+.ufind-label .content, .ufind-label .nocontent { 
+  font-size: 0.73em;
+
+  color:#fff;
+  font-weight: 900;
+
+  margin: 0;
+  padding: 0 0.6em 0 1.2em;
+
+  height: 1.2em;
+  overflow: hidden;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+
+  text-indent: 0;
+
+  text-decoration:none;
+  -moz-border-radius-bottomright:0.3em;
+  -webkit-border-bottom-right-radius:0.3em; 
+  border-bottom-right-radius:0.3em;
+  -moz-border-radius-topright:0.3em;
+  -webkit-border-top-right-radius:0.3em;  
+  border-top-right-radius:0.3em;  
+} 
+
+.ufind-label:before { 
+  display: inline-block;
+  font-size: 0.73em;
+  content: '';
+  overflow: hidden;
+  text-indent: 0;
+  margin: 0;
+  padding: 0;
+  width: 0; 
+  height: 0; 
+  border-top: 0.60em solid transparent;
+  border-bottom: 0.60em solid transparent;
+  border-right: 0.60em solid transparent;
+}
+.ufind-label:after { 
+  font-size: 0.73em;
+  content: '';
+  position: absolute;
+  left: 0.65em;
+  top: 0.35em;
+  text-indent: 0;
+  width: 0.45em;
+  height: 0.45em;
+  overflow: hidden;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #fff;
+}
+
+/* ------------------------------- */
+
+.ufind-label.red .content   { background: #c4161c; }
+.ufind-label.red .nocontent { background: #c4161c; }
+.ufind-label.red::before    { border-right-color: #c4161c; }
+.ufind-label.red::after     { box-shadow:-0.1em -0.1em 0.2em #723230; }
+
+.ufind-label.green .content   { background: #99C93E; }
+.ufind-label.green .nocontent { background: #99C93E; }
+.ufind-label.green::before    { border-right-color: #99C93E; }
+.ufind-label.green::after     { box-shadow:-0.1em -0.1em 0.2em #688d29; }
+
+.ufind-label.blue .content   { background: #1a74b0; }
+.ufind-label.blue .nocontent { background: #1a74b0; }
+.ufind-label.blue::before    { border-right-color: #1a74b0; }
+.ufind-label.blue::after     { box-shadow:-0.1em -0.1em 0.2em #145683; }

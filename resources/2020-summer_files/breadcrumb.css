@@ -1,0 +1,52 @@
+@media print {
+  header.ufind-breadcrumb { display: none; }
+}
+
+@media screen {
+
+  body.small header.ufind-breadcrumb {
+    height: 2em;
+    transition: height 0.5s;
+  }
+
+  header.ufind-breadcrumb {
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 0;
+    top: 2.5em;
+    margin-top: 0;
+    height: 4em;
+    z-index: 9001;
+    white-space: nowrap;
+    pointer-events: none;
+    padding-left: 1ex;
+    padding-right: 1ex;
+
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+
+    transition: height 0.5s, margin-top 0.2s;
+  }
+
+  header.ufind-breadcrumb nav {
+    font-size: 0.8em;
+    display: inline-block;
+    pointer-events: auto;
+  }
+
+  @media (max-width: 40em) {
+
+    body.menu header.ufind-breadcrumb {
+      position: absolute;
+      right: 0;
+      left: 0;
+    }
+  }
+
+}

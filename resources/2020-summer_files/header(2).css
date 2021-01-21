@@ -1,0 +1,23 @@
+@media print {
+  header {
+    display: none;
+  }
+}
+
+@media screen {
+
+  header {
+    font-family: "Roboto",sans-serif,Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+    text-rendering: optimizelegibility;
+    position: fixed;
+    top: 0em;
+    left: 0em;
+    right: 0em;
+    width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+}
