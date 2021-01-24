@@ -4,6 +4,7 @@ import {parse} from 'date-fns';
 import {Module} from '../entity/Module';
 import {Cluster} from '../entity/Cluster';
 import {CourseOffering, Semester} from '../entity/CourseOffering';
+import _ from 'lodash';
 
 function createCluster(rawCluster: string) {
     let tokens = /(.*)\s\((.*) ECTS\)/.exec(rawCluster);
@@ -72,7 +73,7 @@ async function extractOfferedCourses(html: string) {
         }
         it = it.next();
     }
-    return {clusters, offerings};
+    return {clusters, offerings: _.values(offerings)};
 }
 
 export {

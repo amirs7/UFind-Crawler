@@ -1,4 +1,4 @@
-import {Entity, JoinColumn, ManyToOne, PrimaryColumn} from 'typeorm';
+import {Entity, JoinColumn, ManyToOne, PrimaryColumn, UpdateDateColumn} from 'typeorm';
 import {Course} from './Course';
 
 export enum Semester {
@@ -16,6 +16,9 @@ export class CourseOffering {
     @JoinColumn()
     @ManyToOne(() => Course, course => course.offerings, {primary: true, eager: true, onDelete: 'CASCADE'})
     course: Course;
+
+    @UpdateDateColumn()
+    updatedAt: Date;
 
     constructor(year: number, semester: Semester) {
         this.year = year;
