@@ -1,9 +1,9 @@
-import {Course, CourseType} from '../entity/Course';
+import {Course} from '../entity/Course';
 import cheerio from 'cheerio';
 import {parse} from 'date-fns';
 import {Module} from '../entity/Module';
 import {Cluster} from '../entity/Cluster';
-import {CourseOffering, Semester} from '../entity/CourseOffering';
+import {CourseOffering} from '../entity/CourseOffering';
 import _ from 'lodash';
 
 function createCluster(rawCluster: string) {
@@ -26,7 +26,7 @@ function createModule(rawModule: string) {
 function getYearSemester(rawYearSemester: string) {
     let tokens = /([\d]{4})([\w])/.exec(rawYearSemester);
     if (tokens) {
-        return {year: Number(tokens[1]), semester: Semester[tokens[2]]};
+        return {year: Number(tokens[1]), semester: tokens[2]};
     }
     return null;
 }
@@ -64,12 +64,12 @@ async function extractOfferedCourses(html: string) {
         if (it.hasClass('course')) {
             let name = it.children('.what').text();
             let number = Number(it.children('.number').text());
-            let type = CourseType[it.children('.type').text()];
+            let type = it.children('.type').text();
             let course = new Course(number, type, name);
+            module.addCourse(course);
             let offering = new CourseOffering(year, semester);
             offering.course = course;
             offerings[course.number] = offering;
-            module.addCourse(course);
         }
         it = it.next();
     }

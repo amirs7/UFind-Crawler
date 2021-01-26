@@ -2,7 +2,7 @@ import axios from 'axios';
 
 async function loadUrl(url: string) {
     try {
-        const response = await axios.get(url, {timeout: 5000});
+        const response = await axios.get(url, {timeout: 10000});
         console.log(`${url} fetched!`);
         return response.data;
     } catch (error) {

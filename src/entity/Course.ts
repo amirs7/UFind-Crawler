@@ -2,10 +2,6 @@ import {Column, Entity, ManyToOne, OneToMany, PrimaryColumn} from 'typeorm';
 import {Module} from './Module';
 import {CourseOffering} from './CourseOffering';
 
-export enum CourseType {
-    VU, SE, LP, VO, UE
-}
-
 @Entity()
 export class Course {
     @PrimaryColumn()
@@ -15,7 +11,7 @@ export class Course {
     name: string;
 
     @Column()
-    type: CourseType;
+    type: string;
 
     @ManyToOne(() => Module, module => module.courses, {eager: true, onDelete: 'CASCADE'})
     module: Module;
@@ -23,7 +19,7 @@ export class Course {
     @OneToMany(() => CourseOffering, offering => offering.course, {cascade: true})
     offerings: CourseOffering[];
 
-    constructor(number: number, type: CourseType, name: string) {
+    constructor(number: number, type: string, name: string) {
         this.number = number;
         this.type = type;
         this.name = name;

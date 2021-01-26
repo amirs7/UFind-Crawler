@@ -23,12 +23,22 @@ import {Crawler} from './Crawler';
 
     shell.defineCommand('update', {
         help: 'Update the database',
-        async action() {
-            await crawler.updateAllSemesters();
+        async action(semester: string) {
+            if (semester)
+                await crawler.updateSemester(semester);
+            else
+                await crawler.updateAllSemesters();
             console.log('Database updated');
             this.displayPrompt();
         }
     });
+
+    shell.defineCommand('printAll', {
+        help: 'Prints all courses',
+        async action() {
+            await crawler.printAllOfferings();
+        }
+    })
 })();
 
 

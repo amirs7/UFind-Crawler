@@ -22,7 +22,7 @@ export class Crawler {
         console.log('Connected to DB');
     }
 
-    async stop(){
+    async stop() {
         await this.connection.close();
     }
 
@@ -40,13 +40,13 @@ export class Crawler {
     async updateSemester(semester: string) {
         let html = await loadUFindUrl(semesterIds[semester]);
         let {clusters, offerings} = await extractOfferedCourses(html);
-        console.log('Courses extracted for', semester)
+        console.log('Courses extracted for', semester);
 
         let clusterRepository = this.connection.getRepository(Cluster);
         let offeringRepository = this.connection.getRepository(CourseOffering);
 
         let latestOffering = await offeringRepository.find({
-            where: {semester: offerings[0].semester},
+            where: {semester: offerings[0].semester, year: offerings[0].year},
             select: ['updatedAt'],
             order: {
                 updatedAt: 'DESC'
@@ -66,5 +66,12 @@ export class Crawler {
     async updateAllSemesters() {
         for (let semester in semesterIds)
             await this.updateSemester(semester);
+    }
+
+    async printAllOfferings() {
+        let offeringRepository = this.connection.getRepository(CourseOffering);
+        let offerings = await offeringRepository.find();
+        for (let offering of offerings)
+            console.log(offering);
     }
 }
