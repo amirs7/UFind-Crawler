@@ -9,7 +9,7 @@
             border: 1px solid lightgray;
         }
     </style>
-    <title>{{title}}</title>
+    <title>Modules Dependencies</title>
 </head>
 <body>
 <div id="mynetwork"></div>
@@ -55,14 +55,14 @@
     network.on('selectNode', function(event) {
         let selectedNodeId = event.nodes[event.nodes.length - 1];
         let children = getAllChildren(selectedNodeId);
-        let toBeSelected = [...children, ...event.nodes];
         network.selectNodes([...network.getSelectedNodes(), ...children]);
     });
 
     function getAllChildren(nodeId) {
         let result = [nodeId];
         for (var child of network.getConnectedNodes(nodeId, 'to'))
-            result.push(...getAllChildren(child));
+            result.push(child);
+        //result.push(...getAllChildren(child));
         return result;
     }
 </script>

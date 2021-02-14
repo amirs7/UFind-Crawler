@@ -30,6 +30,7 @@ let data = {
             'dse',
             'pop',
             'sdm',
+            'dpa',
             'at-pc'
         ]
     },
